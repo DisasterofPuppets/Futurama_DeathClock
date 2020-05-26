@@ -76,14 +76,24 @@ bool dateshown = false;
 
 
 
-char* COD[]={"Ants!! So many ants.",
-"Radioactive apes.",
-"Hit by a camel.",
-"Unknown.",
-"Choke on a carrot.",
-"Trip over own pants.",
-"Noxious gasses.",
-"Venomous rabbit"};
+char* COD[]={"Ants!! So many ants",
+"Radioactive apes",
+"Hit by a camel",
+"Sucked out an airlock",
+"Unable to retrieve carrot",
+"Trip over own pants",
+"Noxious gasses",
+"Venomous rabbit",
+"Junk caught in vacuum",
+"You get mauled by a bear",
+"Surfed to long",
+"Planet-wide extinction event",
+"Space herpes",
+"Ask again later, I'm trying to score with the toaster",
+"Reverse enema",
+"Get an owwieeee",
+"Suffocated by puppets"
+};
 
 char* mon[]={
 "JAN",
@@ -186,7 +196,9 @@ int var = digitalRead(S_PIN);
     if (var == 0 or dateshown == true) //Pushed
     {
       if (dateshown == true){
-          int picker = random(0,9);
+
+        
+          int picker = random(0,17);
           strcpy(newMessage,COD[picker]);
    
               LCD.displayReset();
