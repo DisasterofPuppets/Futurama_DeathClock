@@ -73,7 +73,7 @@ char curMessage[BUF_SIZE] = { " " };
 char newMessage[BUF_SIZE] = {"DeathClock"};
 char Default[BUF_SIZE] = {"DeathClock"};
 bool dateshown = false;
-
+bool buttonState = false;
 
 
 char* COD[]={"Ants!! So many ants",
@@ -89,7 +89,7 @@ char* COD[]={"Ants!! So many ants",
 "Surfed to long",
 "Planet-wide extinction event",
 "Space herpes",
-"Ask again later, I'm trying to score with the toaster",
+"Finger machine stuck in anus",
 "Reverse enema",
 "Get an owwieeee",
 "Suffocated by puppets"
@@ -190,40 +190,37 @@ void loop()
 // bool true if at least one zone animation has completed, false otherwise. 
 int var = digitalRead(S_PIN);
 
+if (var == 0){
+  buttonState = true;
+}
+
+
   if (LCD.displayAnimate())
     {
       GetDeath();
-    if (var == 0 or dateshown == true) //Pushed
+    if (buttonState == true or dateshown == true) //Pushed
     {
       if (dateshown == true){
-
         
           int picker = random(0,17);
           strcpy(newMessage,COD[picker]);
-   
-              LCD.displayReset();
-              LCD.displayAnimate();
               dateshown = false;
                             }
       else{
               // Date
               strcpy(newMessage,curMessage);
-              LCD.displayReset();
-              LCD.displayAnimate();
               dateshown = true;
+              buttonState = false;
           }
     
     }
     else{
               strcpy(newMessage,Default);
+
+        }
+              
               LCD.displayReset();
-              LCD.displayAnimate();
-    }
-
- 
-
-
-       
+              LCD.displayAnimate();      
   }
 
 }
