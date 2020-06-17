@@ -20,6 +20,8 @@ Print the following files:
 -	rear.stl
 -	FrontLCD.stl
 - leg.stl (x4)
+
+See NanoDeathClockWiring.png or ESP8266DeathClockWiring.png for connections
 ==================================================================================
 
 ******************************
@@ -47,6 +49,8 @@ Print the following files:
 -	MG90S Servo Mount.3mf
 -	Rackandpinion.3mf
 (This is an edited version of https://www.thingiverse.com/thing:944471 by dreyfusduke)
+
+See ESP8266DeathClockFingerWiring.png for connections
 
 Any questions feel free to come chat http://twitch.tv/disasterofpuppets
 Tutorial available on Disaster of Puppets Youtube channel http://www.disasterofpuppets.com
