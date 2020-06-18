@@ -81,18 +81,27 @@ char* COD[]={"Ants!! So many ants",
 "Hit by a camel",
 "Sucked out an airlock",
 "Unable to retrieve carrot",
-"Trip over own pants",
+"Trip over own feet",
 "Noxious gasses",
 "Venomous rabbit",
 "Junk caught in vacuum",
-"You get mauled by a bear",
+"Mauled by a bear",
 "Surfed to long",
 "Planet-wide extinction event",
 "Space herpes",
 "Finger machine stuck in anus",
-"Reverse enema",
+"Enema gone wrong",
 "Get an owwieeee",
-"Suffocated by puppets"
+"Suffocated by puppets",
+"Government cover-up",
+"Trump mismanagement",
+"Netflix becomes self-aware"
+"Trampled by goats"
+"Engorged with icecream"
+"Wayward meteor"
+"Squirrel revolution"
+"Train, choo choo motherfucker",
+"Nexk snaps trying to lick your own junk"
 };
 
 char* mon[]={
@@ -122,7 +131,7 @@ void GetDeath()
 
   char* month = (mon[MMM]);
 
-  int year = random(2024,2101);
+  int year = random(2024,2074);
 
    if (month == "FEB")
      {
@@ -202,7 +211,7 @@ if (var == 0){
     {
       if (dateshown == true){
         
-          int picker = random(0,17);
+          int picker = random(0,26);
           strcpy(newMessage,COD[picker]);
               dateshown = false;
                             }
