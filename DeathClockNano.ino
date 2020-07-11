@@ -13,6 +13,9 @@
 // MD_MAX72XX library can be found at https://github.com/MajicDesigns/MD_MAX72XX
 //
 
+// YOU MAY NEED TO DISCONNECT THE GROUND FROM THE LCD TO UPLOAD NEW CODE, ELSE YOU MAY GET CONNECTION ERRORS
+
+
 #include <MD_Parola.h>
 #include <MD_MAX72xx.h>
 #include <SPI.h>
@@ -95,13 +98,13 @@ char* COD[]={"Ants!! So many ants",
 "Suffocated by puppets",
 "Government cover-up",
 "Trump mismanagement",
-"Netflix becomes self-aware"
-"Trampled by goats"
-"Engorged with ice cream"
-"Wayward meteor"
-"Squirrel revolution"
+"Netflix becomes self-aware",
+"Trampled by goats",
+"Engorged with ice cream",
+"Wayward meteor",
+"Squirrel revolution",
 "Train, choo choo motherfucker",
-"Neck snaps trying to lick your own junk"
+"Neck snaps trying to lick your own junk",
 };
 
 char* mon[]={
