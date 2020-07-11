@@ -97,11 +97,11 @@ char* COD[]={"Ants!! So many ants",
 "Trump mismanagement",
 "Netflix becomes self-aware"
 "Trampled by goats"
-"Engorged with icecream"
+"Engorged with ice cream"
 "Wayward meteor"
 "Squirrel revolution"
 "Train, choo choo motherfucker",
-"Nexk snaps trying to lick your own junk"
+"Neck snaps trying to lick your own junk"
 };
 
 char* mon[]={
