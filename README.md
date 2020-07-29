@@ -28,9 +28,40 @@ See NanoDeathClockWiring.png or ESP8266DeathClockWiring.png for connections
 ******** The Finger Mech *******
 ******************************
 
+DeathClock_KCESPFinger.ino
+** updated, new ESP option which currently uses Kruiz-Control to monitor channel points and we simply monitor chat on the Arduino to activate
+The code to enter into Kruiz-Control is :
+
+In triggers.txt located in the main directory
+_____________________________________________
+
+OnChannelPoint "DeathClock"
+Chat Send "{user} is about to reveal their future"
+Delay 25
+
+In the root fileTriggers.txt
+_____________________________________________
+
+Make sure you have the line
+Mycommands.txt
+
+In the Mycommands.txt file located in the triggers directory 
+_____________________________________________________________
+
+#********* Death Clock **********************
+
+OnCommand b 0 !deathshow
+OBS Source DCSound on
+Delay 6
+OBS Source DCSound off
+
+
+
+https://github.com/Kruiser8/Kruiz-Control
+
 The Finger button push mechanism is designed to use channel points with Twitch integration.
 As such it uses an ESP8266 board. You could merge DeathClockESP.ino and ESPDeathClockFinger.ino into one, however
-I have kept them separate so you have the choice of being able to run manually (which I figure most people would like to do.
+I have kept them separate so you have the choice of being able to run manually (which I figure most people would like to do.)
 
 Parts required:
 ==============
